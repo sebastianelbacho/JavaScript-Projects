@@ -18,7 +18,7 @@ button {
     padding: 10px;
     border-radius: 5px;
     margin: 20px;
-    
+
 }
 
 .click {
@@ -115,11 +115,20 @@ img {
     margin-right: auto;
     width: 50%;
 }
+ p {
+     text-align: center;
+     font-size: 2rem;
+ }
 
-p {
+ .bruce {
     text-align: center;
-    font-size: 2rem;
-}
+    font-size: 40px;
+    color: #fff;
+    
+    
+ }
+
+
 
 
 
