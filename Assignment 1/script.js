@@ -13,9 +13,9 @@ logo.addEventListener('click', function () {
 
 })
 
-let text = "and all mankind is on one sea";
-var result = text.fontcolor("yellow");
-document.getElementById("yellow").innerHTML = result;
+let text = "and all mankind is on one sea"; //taking the marked text 
+var result = text.fontcolor("yellow");  //dispalay marked text in yellow color
+document.getElementById("yellow").innerHTML = result; //
 
 function myFunction() { // taking the document from myFunction in HTML and open in a new window text....
     document.write("\"Always be yourself, express yourself, have faith in yourself, do not go out and look for a successful personality and duplicate it.\"" + "-Bruce Lee");
