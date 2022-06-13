@@ -10,6 +10,22 @@ body {
     color: white;
 }
 
+button {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    background-color: #223b55;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+    
+}
+
+.click {
+    text-align: center;
+    margin-top: 30px;
+}
+
 
 .wrapper {
     width: 90%;
