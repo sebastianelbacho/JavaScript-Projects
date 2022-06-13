@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.container {
+    background-color: black;
+    float: right;
+    height: 25px;
+    width: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menulogo {
+    height: 3px;
+    width: 30px;
+    background-color: snow;
+
+
+}
+
+.menu {
+    width: 50%;
+    height: 10vh;
+    background-color: black;
+    padding: 30px;
+    transform: translateX(-500px);
+    transition: 0.6s;
+}
+
+.menu li {
+    list-style-type: none;
+    border-bottom: 1px solid rgb(222, 221, 233);
+    pad: 30px;
+    text-align: center;
+}
+
+.showmenu {
+    transform: translateX(0);
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu li:first-child {
+    font-weight: bold;
+}
+
+.menu li a {
+    color: snow;
+    text-decoration: none;
+    font-size: 20px;
+    transition: font-weight 0.2s;
+
+}
+
+.menu li a:hover {
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    height: 0;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 25px;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+img {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    .menu {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .menu li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    header {
+        font-size: 5px;
+    }
+
+}
+
+@media screen and(max-width: 400px) {
+    p {
+        font-size: 2px;
+    }
+
+}
