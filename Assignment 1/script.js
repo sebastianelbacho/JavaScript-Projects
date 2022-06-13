@@ -1,5 +1,9 @@
 window.alert("Welcome! I'm still learning so, please understanding me :)"); //shows the text in a window
-window.alert("Hello Visitor!"); // display the text after window.alert
+
+document.getElementById("window").addEventListener("click", function () { // Alert "Hello Visito" when the user clicks on an element
+    alert("Hello Visitor!"); // display the text window.alert
+});
+
 
 
 var logo = document.querySelector('.container'); //variable and function 
