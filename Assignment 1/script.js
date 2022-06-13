@@ -6,8 +6,7 @@ document.getElementById("window").addEventListener("click", function () { // Ale
 
 
 
-var logo = document.querySelector('.container'); //variable and function 
-var menu = document.querySelector('.menu');
+var logo = document.querySelector('.container'); //The querySelector() method returns the first element that matches a CSS selector
 
 logo.addEventListener('click', function () {
     menu.classList.toggle('showmenu');
@@ -18,4 +17,6 @@ let text = "and all mankind is on one sea";
 var result = text.fontcolor("yellow");
 document.getElementById("yellow").innerHTML = result;
 
-document.write("\"I’m not in this world to live up to your expectations and you’re not in this world to live up to mine.\"" + "-Bruce Lee");
+function myFunction() { // taking the document from myFunction in HTML and open in a new window text....
+    document.write("\"Always be yourself, express yourself, have faith in yourself, do not go out and look for a successful personality and duplicate it.\"" + "-Bruce Lee");
+} 
