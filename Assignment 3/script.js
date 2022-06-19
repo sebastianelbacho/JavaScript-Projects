@@ -21,7 +21,7 @@ document.getElementById("math").innerHTML = x; //This is working
 
 function addition_Function() {
     var addition = 2 + 2;
-    document.getElementById("math").innerHTML = "2+2=" + addition; //This is not working, I dont know why ?
+    document.getElementById("math").innerHTML = "If You take 2 and add 2 You will get" + addition; //This is not working, I dont know why ?
 
 
 }
