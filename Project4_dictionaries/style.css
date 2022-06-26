@@ -1,0 +1,165 @@
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box; */
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* NAV */
+
+nav {
+    max-width: 1440px;
+    margin: 30px auto;
+    text-align: right;
+
+}
+
+nav a {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #555;
+    padding: 10px;
+    margin: 0 20px;
+
+}
+
+nav a.reservation {
+    font-size: 2.2rem;
+    border: 2px solid #555;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    margin-right: 50px;
+    margin-left: 80px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #555;
+    color: #222;
+}
+
+nav a.reservation:hover {
+    background-color: royalblue;
+    color: #eee;
+    border-color: royalblue;
+
+}
+
+
+
+
+/* Header   */
+
+header {
+    height: 40vh;
+    background-image: url(img/geometry.jpg);
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    line-height: 40vh;
+    background-color: rgba(0, 0, 0, 50%);
+
+}
+
+/* Main */
+
+main {
+    max-width: 1440px;
+    margin: 5vh auto;
+    font-size: 0;
+
+}
+
+div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+div p {
+
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 10px 30px 50px 30px;
+    line-height: 180%;
+
+
+
+}
+
+#dictionary {
+    font-size: 2rem;
+    text-align: center;
+    color: #222;
+    text-transform: uppercase;
+    cursor: pointer
+}
+
+main div.feature {
+    display: inline-block;
+    width: 33.33%;
+
+}
+
+main div.image {
+    height: 200px;
+    background-image: url(img/questions.jpg);
+    margin: 20px 30px;
+
+}
+
+main div.java {
+    height: 200px;
+    background-image: url(img/java.jpg);
+    margin: 20px 30px;
+
+}
+
+main div.school {
+    height: 200px;
+    background-image: url(img/mind.jpg);
+
+    margin: 20px 30px;
+}
+
+main h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #222;
+
+}
+
+/*#assignment {
+    font-size: 2rem;
+    text-align: center;
+    color: #222;
+    cursor: pointer;
+} */
+
+/* footer */
+
+footer {
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+}
