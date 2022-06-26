@@ -1,5 +1,5 @@
-function my_Dictionary() {
-    var Guitar = {
+function my_Dictionary() {  //name of function in the text
+    var Guitar = {    // type of variable
         kind: "6 strings guitar",
         type: "classic-acustic",
         color: "amber-yellow",
@@ -8,6 +8,6 @@ function my_Dictionary() {
         frets: "24",
     };
     delete Guitar.color;
-    document.getElementById("dictionary").innerHTML = Guitar.wood;
+    document.getElementById("dictionary").innerHTML = Guitar.wood; //pick element from source and from variable
 
 }
