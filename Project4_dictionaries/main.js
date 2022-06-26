@@ -6,6 +6,8 @@ function my_Dictionary() {
         wood: "ash",
         sound: "hard and clear",
         frets: "24",
-    }
-    document.getElementById("dictionary").innerHTML = Guitar.color;
+    };
+    delete Guitar.color;
+    document.getElementById("dictionary").innerHTML = Guitar.wood;
+
 }
