@@ -62,7 +62,7 @@ nav a.reservation:hover {
 
 header {
     height: 40vh;
-    background-image: url(img/geometry.jpg);
+    background-image: url(geometry.jpg);
     background-size: cover;
 }
 
@@ -100,21 +100,21 @@ main div.feature {
 
 main div.image {
     height: 200px;
-    background-image: url(img/questions.jpg);
+    background-image: url(questions.jpg);
     margin: 20px 30px;
 
 }
 
 main div.java {
     height: 200px;
-    background-image: url(img/java.jpg);
+    background-image: url(java.jpg);
     margin: 20px 30px;
 
 }
 
 main div.school {
     height: 200px;
-    background-image: url(img/mind.jpg);
+    background-image: url(mind.jpg);
 
     margin: 20px 30px;
 }
