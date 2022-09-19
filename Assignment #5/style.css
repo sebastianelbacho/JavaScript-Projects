@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(zdj.jpg);
+    height: 150vh;
+    /* text-align: center; */
+}
+
+.header {
+    /*background-color: rgba(95, 158, 160, 10); */
+    height: 150px;
+
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+wrapper {
+    font-size: 0;
+}
+
+#Not {
+    text-align: center;
+
+
+}
+
+
+.main p {
+    max-width: 1240px;
+    height: 25vh;
+    margin: 0 auto;
+    text-align: justify;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+button {
+    display: inline-block;
+    /* width: 10%; */
+    margin: 50px 0 50px 20px ;
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+    border: 2px solid white;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: brown;
+}
+
+footer {
+
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 80%;
+    padding-bottom: 10%;
+}
