@@ -1,0 +1,16 @@
+HTML 
+<p>Rider must be at list 52 centimeters tall to ride</p>
+<input id="height" value="52" />
+<button onclick="Ride_Function()">Click here!</button> 
+<p id="Ride"</p>
+
+
+JavaScript:
+
+function Ride_Function() {
+var height, can ride;
+height = document.getElementById("height").value;
+Can_Ride = (height < 52) ? "You are too short" : "You are tall enough";
+document.getElementById("ride").innerHTML = Can_ride + "to ride.";
+
+}
