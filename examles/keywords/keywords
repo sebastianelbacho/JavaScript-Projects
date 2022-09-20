@@ -1,0 +1,22 @@
+HTML:
+<button onclick="myFunction()">Click Here!"</button>
+<p id="Keywords_and_Conctructors"></p>
+
+
+JavaScript:
+function Vehicle(Make, Model, Year, Color) {
+this.Vehicle_Make = Make;
+this.Vehicle_Model = Model;
+this.Vehicle_Year = Year;
+this.Vehicle_Color = Colr;
+}
+
+var Jack = new Vehicle("Dodge", "Viper", 2020, "Red");
+var Emily = new Vehicle("Jeep", "Trial Hawk", 2019, "White and Black");
+ver Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
+function myFunction() {
+document.getElementById("Keywords_and_Constructors").innerHTML = "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model +
+          " manufactured in " + Erik.Vehicle_Year;
+          
+}          
+          
