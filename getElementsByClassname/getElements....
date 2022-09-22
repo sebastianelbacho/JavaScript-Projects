@@ -1,7 +1,7 @@
 HTML:
-<button class="Click">This text will change!</h1>
-        <h3 class="Click">This text will not change.</h3>
-        <button onclick="Hello_World_Function()">Click Me!</button>
+<h1 class="Click">This text will change!</h1>
+<h3 class="Click">This text will not change.</h3>
+<button onclick="Hello_World_Function()">Click Me!</button>
 
 
 
