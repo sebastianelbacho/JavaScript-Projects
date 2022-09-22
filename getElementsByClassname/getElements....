@@ -1,0 +1,20 @@
+HTML:
+<button class="Click">This text will change!</h1>
+        <h3 class="Click">This text will not change.</h3>
+        <button onclick="Hello_World_Function()">Click Me!</button>
+
+
+
+
+
+
+
+
+
+
+javaScript:
+
+function Hello_World_Function() {
+    var A = document.getElementsByClassName("Click");
+    A[0].innerHTML = "The text has changed!";
+}
