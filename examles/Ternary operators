@@ -1,4 +1,4 @@
-HTML 
+HTML:
 <p>Rider must be at list 52 centimeters tall to ride</p>
 <input id="height" value="52" />
 <button onclick="Ride_Function()">Click here!</button> 
