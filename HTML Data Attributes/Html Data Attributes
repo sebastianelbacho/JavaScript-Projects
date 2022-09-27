@@ -1,1 +1,42 @@
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Data Attributes</title>
+    
+</head>
+
+<body>
+    <!-- <ol>
+        <li data-family_relation="father">Mark</li>
+        <li data-family_relation="mother">Kelly</li>
+        <li data-family_relation="sister">Maxine</li>
+    </ol> -->
+
+    <h1>Characters</h1>
+    <h3>Click on a universe to see a character!</h3>
+    <ul>
+        <li onclick="displayType(this)" id="DC" data-character-type="Batman">DC</li>
+        <li onclick="displayType(this)" id="Star Wars" data-character-type="Luke Skaywalkwer">Star Wars</li>
+        <li onclick="displayType(this)" id="Marvel" data-character-type="Thor">Marvel</li>
+        <li onclick="displayType(this)" id="Star Treck" data-character-type="Jean-Luc Picard">Star Treck</li>
+    </ul>
+
+    <script src="#"></script>
+</body>
+
+</html>
+
+JavaScript:
+
+function displayType(character) {
+    var characterType = character.getAttribute("data-character-type");
+    alert(characterType + " is in the " + character.ineer.HTML + " unverse!");
+}
+
 
