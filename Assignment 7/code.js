@@ -13,3 +13,12 @@ if (hourNow > 18) {
 }
 
 document.write("<h4>" + greetings + "</h4>");
+
+
+function getArea(width, height) {
+    var area = width * height;
+    return area;
+}
+
+let wallSize = getArea(4, 7);
+document.write(wallSize);
