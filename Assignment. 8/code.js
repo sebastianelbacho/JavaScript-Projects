@@ -25,7 +25,7 @@ function sliceMethod() {          //this function its takes out "white spce" and
 }
 
 
-function string_Method() {
+function string_Method() {   //This function displays the integer as a string
     let B = 102;
     document.getElementById("Numbers_to_string").innerHTML = B.toString();
 }
