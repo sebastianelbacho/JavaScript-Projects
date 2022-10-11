@@ -1,7 +1,7 @@
 
 
 
-function a_Few_Words() {
+function a_Few_Words() {               //This function glue togheter single words.
     let part_1 = "If You clicked  ";
     let part_2 = "here, ";
     let part_3 = "You know now  ";
@@ -12,13 +12,13 @@ function a_Few_Words() {
 }
 
 
-function precisionMethod() {
+function precisionMethod() {    // this function round up the number.
     let A = 231.8909;
     document.getElementById("Here").innerHTML = A.toPrecision(3);
 }
 
 
-function sliceMethod() {
+function sliceMethod() {          //this function its takes out "white spce" and letter "f" from the sentence.
     let Sentence = "Water can flow or destroy. Be water, my friend.";
     let Section = Sentence.slice(10, 11);
     document.getElementById("Slice").innerHTML = Section;
