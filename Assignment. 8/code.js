@@ -23,3 +23,9 @@ function sliceMethod() {          //this function its takes out "white spce" and
     let Section = Sentence.slice(10, 11);
     document.getElementById("Slice").innerHTML = Section;
 }
+
+
+function string_Method() {
+    let B = 102;
+    document.getElementById("Numbers_to_string").innerHTML = B.toString();
+}
