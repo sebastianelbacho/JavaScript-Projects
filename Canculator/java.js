@@ -3,7 +3,7 @@ const Calculator = {
     // this is display 0 on the screen
     Display_Value: '0'
     // this wil hold the first operand for any expressions, we set it to null for now
-    First_Operand: null,
+    First_Operand: null,             // HERE MY VSC SHOWS ME AN ERROR....
     // this checks whether or not the second operand has been input
     Wait_Second_Operand: false,
     //  this will hold the operator, we set it to nullfor now
