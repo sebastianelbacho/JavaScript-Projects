@@ -4,6 +4,8 @@ html {
 
 }
 
+
+
 *,
 *::before,
 *::after {
@@ -21,6 +23,7 @@ html {
     transform: translate(-50%, -50%);
     width: 500px;
 
+
 }
 
 .calculator-screen {
@@ -36,8 +39,12 @@ html {
     border-radius: 7px 7px 0px 0px;
 }
 
+
+
 button {
+    float: left;
     height: 70px;
+    width: 25%;
     border-radius: 3px;
     border: 1px solid darkslategray;
     background-color: transparent;
@@ -75,7 +82,8 @@ button:hover {
     background-color: blue;
     border-color: darkslategray;
     color: #fff;
-    height: 100%;
+    /* height: ; */
+    width: 100%;
     grid-area: 2 / 4 / 6 / 5;
 }
 
