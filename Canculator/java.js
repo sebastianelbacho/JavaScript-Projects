@@ -29,7 +29,7 @@ function Input_Digit(digit) {
 }
 
 
-// this section handkes decimal points
+// this section handles decimal points
 function Input_Decimal(dot) {
     // this ensures that accidental clicking of the decimal point
     // doesn't cause bugs in your operation
@@ -37,18 +37,18 @@ function Input_Decimal(dot) {
     if (!Calculator.Display_Value.includes(dot)) {
         // we are saying that if the Display_Value does not contain a decimal point
         // we want to add a decimal point
-        Calculator.Display_Value + - dot;
+        Calculator.Display_Value += dot;
     }
 }
 
 
-// this section handles operaytors
+// this section handles operators
 function Handle_Operator(Next_Operator) {
     const { First_Operand, Display_Value, operator } = Calculator
     // when an operator key is pressed, we convert the current number
     // displayed on the screen to a number and then store the result in 
     // Calculatopr.First_Operand if it doesn't already exist
-    const Value_of_Input = parseFloat(Diplay_Value);
+    const Value_of_Input = parseFloat(Display_Value);
     // checks if an operator already exist and if Wait_Second_Operand is true,
     // then updates the operator and exists from the function
     if (operator && Calculator.Wait_Second_Operand) {
