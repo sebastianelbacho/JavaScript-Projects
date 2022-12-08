@@ -101,7 +101,38 @@ img {
     animation-duration: 1.5s;
 }
 
-p {
+
+.square {
+    margin-left: 40%;
+    
+}
+#seconds {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: aqua;
+    cursor: pointer;
+   
+}
+
+#seconds:hover {
+    background-color:aquamarine;
+}
+button {
+    font-size: 1.5em;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: aquamarine;
+    transition: .2s;
+}
+
+alert {
+    background-color: #d73915;
+}
+
+/* p {
     background-color: aquamarine;
     display: inline-flex;
     align-items: center;
@@ -115,9 +146,10 @@ p {
 .clock {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center; 
     margin-top: 20px;
-}
+} */
+
 
 @keyframes fade {
     from {
