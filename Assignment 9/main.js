@@ -1,67 +1,167 @@
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+body {
+    background-color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100vw;
+    position: relative;
+    margin: auto;
 }
 
-function countdown() {   //the function
-    var seconds = document.getElementById("seconds").value; //variable from HTML doxcument (ID SECONDS)
+img {
+    width: 100vw;
+    height: 80vh;
 
-    function tick() {
-        seconds = seconds - 1;
-        timer.innerHTML = seconds;
-        setTimeout(tick, 1000);
-        if (seconds == -1) {
-            alert("Time's up!");
-        }
-    }
-    tick();
 }
 
-// countDown clock
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: .5s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #d73915;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(103, 10, 10);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #ede7e7;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
 
 
-// const startingMinutes = 10;
-// let time = startingMinutes * 60;
+.square {
+    text-align: center;
 
-// const countdownEl = document.getElementById('countdown');
 
-// setInterval(updateCountdown, 1000);
 
-// function updateCountdown() {
-//     const minutes = Math.floor(time / 60);
-//     let seconds = time % 60;
 
-//     seconds = seconds < 10 ? '0' + seconds : seconds;
+}
 
-//     countdownEl.innerHTML = '${minutes}:${seconds}';
-//     time--;
+#seconds {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: aqua;
+    cursor: pointer;
 
-// }
+}
+
+#seconds:hover {
+    background-color: aquamarine;
+}
+
+button {
+    font-size: 1.45em;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: aquamarine;
+    transition: .2s;
+}
+
+alert {
+    background-color: #d73915;
+}
+
+/* p {
+    background-color: aquamarine;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0;
+    height: 50px;
+    width: 100px;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+} */
+
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
