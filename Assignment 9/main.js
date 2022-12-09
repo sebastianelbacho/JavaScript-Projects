@@ -42,7 +42,7 @@ function countdown() { //the function
         timer.innerHTML = seconds;
         setTimeout(tick, 1000);
         if (seconds == -1) {
-            alert("Time's up!");
+            alert("Hello, Time's up!");    // the pop up is showing up 
         }
     }
     tick();
