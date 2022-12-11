@@ -149,3 +149,27 @@ function audio(audioURL) {
     // Play method plays our audio sound.
     audio.play();
 }
+
+// This function utilizes html canvas to draw win lines.
+function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
+    // This line accesses our html canvas element.
+    const c = canvas.getContext('2d');
+
+    // This line indicates where the start od a lines z axis is.
+    let x1 = coordX1,
+
+        // This line indicates where the start of a lines y axis is.
+        y1 = coordY1,
+        // This line indicates where the end of a lines z axis is.
+        x2 = coordX2,
+
+        // This line indicates where the end os a lines x axis is.
+        y2 = coordY2,
+
+        // This variable stores temporary z axis data we update in our animation loop.
+        x = x1,
+
+        // This variable stores temporary yaxis data we update in our abimation loop.
+        y = y1;
+
+}
