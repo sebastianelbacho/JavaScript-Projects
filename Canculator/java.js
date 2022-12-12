@@ -1,48 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canculator</title>
-    <meta name="description" content="A basic HTML, CSS and JavaScript Calculator">
-    <meta name="author" content="elbacho">
-    <!-- <script src="java.js" defer></script> -->
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="calculator">
-        <input type="text" class="calculator-screen" value="0" disabled />
-        <div class="canculator-keys">
-            <button type="button" class="operator" value="+">+</button>
-            <button type="button" class="operator" value="-">-</button>
-            <button type="button" class="operator" value="*">&times;</button>
-            <button type="button" class="operator" value="/">&divide;</button>
+// creates an object to keep track of values
+const Calculator = {
+    // this is displays 0 on the screen
+    Dispaly_Value: '0',
+    // this will hold the first operand fore any expressions, we set it to null
+    First_Operand: null,
+    // this checks whether or not the second operand has been input
+    Wait_Second_Operand: false,
+    // this will hold the operator, we set it to null for now
+    operator: null,
+};
 
 
-            <button type="button" value="7">7</button>
-            <button type="button" value="8">8</button>
-            <button type="button" value="9">9</button>
+// this modifies values each time a button is clicked
+function Input_Digit(digit) {
+    const { Display_Value, Wait_Second_Oprand } = Calculator;
+    // we are checking to see if Wait_Second_Operand is true and set
+    // Display_Value to the key thet ws clicked.
+    if (Wait_Second/_Operand ===true) {
+        Calculator.Display_Value = digit;
+        Calculator.Wait_Second_Operand = false;
+    } else {
+        // this overwrites Display_Value if the current value is 0
+        // otherwise it adds onto it
+        Calculator.Display_Value = Display_Value === '0' ? digit : Display_Value + digit;
+    }
 
-            <button type="button" value="4">4</button>
-            <button type="button" value="5">5</button>
-            <button type="button" value="6">6</button>
+}         ////// <===========HERE 
+//   this section handles decimal points
+function Input_Decimal (dot) {
+    // this ensures that accidental clicking of the decimal point
+    // doesn't cause bugs in your operation
+    if (Calculator.Wait_Second_Operand === true) return;
+    if (!Calculator.Display_Value.includes(dot)) {
+        // we are sahying that if the Display_vALUE DOES NOT CONTYAIN A DECIMAL POINT
+        // WE WANT TO ADD A DECIMAL POINT
+        Calculator.Display_Value += dot;
+    }
+} 
+}
 
-            <button type="button" value="1">1</button>
-            <button type="button" value="2">2</button>
-            <button type="button" value="3">3</button>
+// this section handles operators
+function Handle_Operator(Next_Operator) {
+    const { First_Operand, Display_Value, operator } = Calculator
+    // when an operator key is presses, we convert thje current number
+    // displayed on the screen to a number and then store the resulkt in
+    // Calculator.Foirst_Operand if it doesn't already exist
+    const Value_of_Input = parseFloat(Display_Value); 
+    // Checks if an operator already exists and if Wait_Second_oPERAND IS TRUE,
+    // THEN UPDATED THE OPERATOR AND EXITS FROM THE FUNCTION
+    if (operator && Calculator.Wait_Second_Operand) {
+        Calculator.operator = Next_Operator;
+        return;
+    } 
+    if ( First_Operand == null) {
+        Calculator.First_Operand = Value_of_Input;
+    } else if (operator) {// checks if an operator already exists
+        const Value_Now = First_Operand || 0;
+        // IF OPERATOR EXISTS, PROPERTY LOOKUP is premormend for the operator
+        // in the Perform_Calculation object and the function thet matches the
+        // operator is exscuted
+        let result = Perform_Calculation[operator] (Value_Now, Value_of_Input);
+        // here we add a fixed amount of numbers after the decimal
+        result = (result * 1).toString()
+        Calculator.First_Value = parseFloat(result);
+        Calculator.First_Operand = parseFloat(result);
+    }
+ 
+}
 
-            <button type="button" value="0">0</button>
-
-            <button type="button" class="decimal function" value=".">.</button>
-            <button type="button" class="all-clear function" value="all-clear">AC</button>
-            <button type="button" class="equal-sign operator" value="=">=</button>
-
-        </div>
-    </div>
-    <script src="java.js" defer></script>
-</body>
-
-</html>
+Calculator.Wait_Second_Operand = true;
+Calculator.operator = Next_Operator;
+}
