@@ -5,7 +5,7 @@ let selectedSquares = [];
 
 
 // This function is for placing an x or o in a square.
-function placeXorO(squareNumber) {
+function placeXOrO(squareNumber) {
     // This condition ensures a square hasn't be selected already.
     // The .some() method is used to check each lement of slectedSquare array.
     // see if it contains the square number clicked on.
@@ -15,7 +15,7 @@ function placeXorO(squareNumber) {
         // this condition checks who's turn it is.
         if (activePlayer === 'X') {
             // if activePlayer is equal to 'X', the x.png is placed HTML
-            select.style.backgroundImage = 'url("images/x.png")';
+            select.style.backgroundImage = 'url(/images/)';
             // Active palyer may only be 'X' or 'O' so, if not 'X' it must be 'O'
 
         } else {
@@ -159,9 +159,9 @@ function checkWinConditions() {
 
     function arrayIncludes(squareA, squareB, squareC) {
         // The next 3 variables will be used to check for 3 in row.
-        const a = selectedSquares(squareA);
-        const b = selectedSquares(squareB);
-        const c = selectedSquares(squareC);
+        const a = selectedSquares.includes(squareA);
+        const b = selectedSquares.includes(squareB);
+        const c = selectedSquares.includes(squareC);
         // id the 3 variables we pass are all included in oiur array true is
         // returned and our else if condition executes the drawWinLine function.
         if (a === true && b === true && c === true) {
