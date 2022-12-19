@@ -15,7 +15,10 @@ html {
 }
 
 .calculator {
-
+    background-image: url(/img/galaxy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 1.2px solid darkslategray;
     border-radius: 7px;
     position: absolute;
@@ -26,6 +29,12 @@ html {
 
 
 }
+
+.image {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
 
 .calculator-screen {
 
@@ -50,10 +59,10 @@ button {
 
     height: 70px;
     border-radius: 3px;
-    border: 1px solid darkslategray;
+    border: 1px solid rgb(237, 228, 239);
     background-color: transparent;
     font-size: 3.2rem;
-    color: black;
+    color: white;
     background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, .06));
     text-shadow: 0 1px rgba(255, 255, 255, .04);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05),
@@ -62,7 +71,7 @@ button {
 }
 
 button:hover {
-    background-color: #e1e1e1;
+    background-color: rgba(0, 0, 0, .6);
 }
 
 .operator {
