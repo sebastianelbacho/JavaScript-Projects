@@ -80,6 +80,10 @@ button:hover {
     background-color: lightgray;
 }
 
+.operator:hover {
+    color: white;
+}
+
 .all-clear {
     background-color: red;
     border-color: darkslategray;
