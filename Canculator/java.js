@@ -1,7 +1,7 @@
 // creates an object to keep track of values
 const Calculator = {
     // this is displays 0 on the screen
-    Dispaly_Value: '0',
+    Display_Value: '0',
     // this will hold the first operand fore any expressions, we set it to null
     First_Operand: null,
     // this checks whether or not the second operand has been input
@@ -15,11 +15,11 @@ const Calculator = {
 function Input_Digit(digit) {
     const {
         Display_Value,
-        Wait_Second_Oprand
+        Wait_Second_Operand
     } = Calculator;
     // we are checking to see if Wait_Second_Operand is true and set
     // Display_Value to the key thet ws clicked.
-    if (Wait_Second / _Operand === true) {
+    if (Wait_Second_Operand === true) {
         Calculator.Display_Value = digit;
         Calculator.Wait_Second_Operand = false;
     } else {
@@ -28,7 +28,7 @@ function Input_Digit(digit) {
         Calculator.Display_Value = Display_Value === '0' ? digit : Display_Value + digit;
     }
 
-} ////// <===========HERE 
+}
 //   this section handles decimal points
 function Input_Decimal(dot) {
     // this ensures that accidental clicking of the decimal point
@@ -73,10 +73,12 @@ function Handle_Operator(Next_Operator) {
         Calculator.First_Operand = parseFloat(result);
     }
 
-}
 
-Calculator.Wait_Second_Operand = true;
-Calculator.operator = Next_Operator;
+
+    Calculator.Wait_Second_Operand = true;
+    Calculator.operator = Next_Operator;
+
+}
 
 
 const Perform_Calculation = {
@@ -89,7 +91,7 @@ const Perform_Calculation = {
 };
 
 function Calculator_Reset() {
-    Calculator.Dispaly_Value = '0';
+    Calculator.Display_Value = '0';
     Calculator.First_Operand = null;
     Calculator.Wait_Second_Operand = false;
     Calculator.operator = null;
