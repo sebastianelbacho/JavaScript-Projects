@@ -68,8 +68,10 @@ function Handle_Operator(Next_Operator) {
         // operator is exscuted
         let result = Perform_Calculation[operator](Value_Now, Value_of_Input);
         // here we add a fixed amount of numbers after the decimal
+        result = Number(result).toFixed(9)
+        // thie will remove any trailing 0's
         result = (result * 1).toString()
-        Calculator.First_Value = parseFloat(result);
+        Calculator.Display_Value = parseFloat(result);
         Calculator.First_Operand = parseFloat(result);
     }
 
@@ -101,7 +103,7 @@ function Calculator_Reset() {
 
 function Update_Display() {
     const display = document.querySelector('.calculator-screen');
-    display.Value = Calculator.Display_Value;
+    display.value = Calculator.Display_Value;
 }
 
 Update_Display();
