@@ -15,7 +15,7 @@ function placeXOrO(squareNumber) {
         // this condition checks who's turn it is.
         if (activePlayer === 'X') {
             // if activePlayer is equal to 'X', the x.png is placed HTML
-            select.style.backgroundImage = 'url(/images/)';
+            select.style.backgroundImage = 'url("images/x.png")';
             // Active palyer may only be 'X' or 'O' so, if not 'X' it must be 'O'
 
         } else {
@@ -29,16 +29,18 @@ function placeXOrO(squareNumber) {
         checkWinConditions();
         // this condition is for changing the active player.
         if (activePlayer === 'X') {
-            // if active player is anthoing other than 'X'.
+            // if active player is anthoing other than 'X' change it to 'O'
+            activePlayer = 'O';
 
 
+            // if active player is anthing other then 'X'
         } else {
             // change the activePlayer to 'X'
             activePlayer = 'X';
         }
 
         // this function plays placemend sound.
-        Audio('./media/place.mp3');
+        audio('./media/place.mp3');
         // this condition checks to see if it is computer turn.
         if (activePlayer === 'O') {
             // this function disables clicking for computer choice.
@@ -46,7 +48,7 @@ function placeXOrO(squareNumber) {
             // This function waits 1 second before placing the image
             // and enabling click.
             setTimeout(function () {
-                computerTurn(); // my vsc code shows me error here   <===
+                computersTurn(); // my vsc code shows me error here   <===
             }, 1000);
         }
         // Returning truwe is needed for our computersTurn() function to work.
@@ -54,7 +56,7 @@ function placeXOrO(squareNumber) {
     }
 
     // This function results in a random squre being selected.
-    function computerTurn() {
+    function computersTurn() {
         // This boolean is needed for our while loop.
         let success = false;
         // This variable stores a random number 0-8
@@ -65,9 +67,9 @@ function placeXOrO(squareNumber) {
             // A randomn number between 0 and 8 is selecyted
             pickASquare = String(Math.floor(Math.random() * 9));
             // If the random number evaluates returns true, the square hasn't been selected yet.
-            if (placeXorO(pickASquare)) {
+            if (placeXOrO(pickASquare)) {
                 // This line cals the function.
-                placeXorO(pickASquare);
+                placeXOrO(pickASquare);
                 // This changes our boolean an ends the loop.
                 success = true;
             };
