@@ -6,19 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Project.</title>
-    <script src="pizza_JavaScript/javaScript.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" type="text/css" href="pizza css/style.css">
 </head>
 
-<header>
 
-    </header>
+<header>
+    <div class="color">
+
+        <h1>Pizza Drill Tutorial</h1>
+        <p>The best pizza in Your town...</p>
+    </div>
+
+
+
+
+</header>
+
 
 <body>
+
     <div id="menuBG">
-        <h1 style="margin: 0 0px 0 10px;">Pizza Drill Tutorial</h1>
-        <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
-        <form id="frmMenu">
+
+     
+
             <div class="menu left">
                 <h3>Size:</h3>
                 <input class="size" type="radio" name="Size" value="Personal Pizza">Personal Pizza<br>
@@ -26,6 +41,8 @@
                 <input class="size" type="radio" name="Size" value="Large Pizza" checked>Large Pizza<br>
                 <input class="size" type="radio" name="Size" value="Extra Large Pizza">Extra Large Pizza<br>
             </div>
+
+           
 
             <div class="menu right">
                 <h3>Meats:</h3>
@@ -35,17 +52,51 @@
                 <input class="toppings" type="checkbox" name="Topping" value="Ground Beef">Ground Beef<br>
                 <input class="toppings" type="checkbox" name="Topping" value="Anchovy">Anchovy<br>
                 <input class="toppings" type="checkbox" name="Topping" value="Chicken">Chicken<br>
+                </div>
 
 
-            </div>
-            <div id="cart">
-                <div id="showText"></div>
-                <div id="totalPrice"></div>
-            </div>
+                <div class="last">
+                    <h3>Vegetables:</h3>
+                    <input class="veg" type="radio" name="Vegetables"
+                    value="Cucamber">Cucamber<br>
+                    <input class="veg" type="radio" name="Vegetables"
+                    value="Cherry tomato">Cherry tomato<br>
+                    <input class="veg" type="radio" name="Vegetables"
+                    value="Garlic">Garlic<br>
+                    <input class="veg" type="radio" name="Vegetables"
+                    value="Olives">Olives<br>
+                    <input class="veg" type="radio" name="Vegetables"
+                    value="Chees">Extra portion of chees<br>
+                </div>
+
+               
+
+
+            
+
+           
+
+           
 
 
         </form>
     </div>
+<div class="container">
+    <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+    <div class="popup" id="popup>"
+    <form id="frmMenu">
+        <div id="cart">
+            <div id="showText"></div>
+            <div id="totalPrice"></div>
+        </div>
+    
+</div>
+</div>
+
+        
+
+
+    <script src="/pizza_JavaScript/javaScript.js" defer></script>
 </body>
 
-</html>
+</html> 
