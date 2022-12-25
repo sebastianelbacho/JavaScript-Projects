@@ -16,8 +16,9 @@
  }
 
  body {
-     background-image: linear-gradient(30deg, green, red);
+     background-image: linear-gradient(46deg, green, red);
      color: white;
+     
 
  }
 
@@ -65,36 +66,65 @@
 
 
  #menuBG {
-     width: 400px;
-     height: 470px;
-     margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 450px;
+    margin: 10px auto;
 
  }
 
- #frmMenu {
-     width: 400px;
-     height: 200px;
- }
+ 
+
+  #frmMenu {
+    width: 400px;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    
+
+ } 
+
+
+
 
  #totalPrice {
      width: 200px;
      height: 190px;
      margin: 0 auto;
-     float: right;
+     
+     font-size: 1.5em;
  }
 
  .left {
-     width: 200px;
+     /* width: 200px; */
+      
      height: 200px;
      float: left;
      font-size: 1.5em;
  }
 
+
+
+ .last {
+    /* width: 200px; */
+    height: 200px;
+    padding-left: 50px;
+    
+    font-size: 1.5em;
+
+ }
+
  .right {
-     width: 200px;
+     /* width: 200px; */
      height: 200px;
      padding-left: 50px;
-     float: right;
+     
      font-size: 1.5em;
  }
 
@@ -106,19 +136,23 @@
      width: 200px;
      height: 190px;
      margin: 0px auto;
-     float: left;
+     /* float: left; */
+     font-size: 1.1em;
  }
 
  #cart {
+    
      top: 0;
      margin: 50px auto;
      width: 400px;
      height: 200px;
+     font-size: 1em;
      
  }
 
  #btnOrder {
-     margin: 100px 0px 0px 100px;
+    
+     margin: 0 45%;
      width: 150px;
      height: 40px;
      background: #fff;
