@@ -8,7 +8,7 @@
  header {
      width: 100vw;
      height: 60vh;
-     background-image: url(/img/pizza.jpg);
+     background-image: url("../img/pizza.jpg");
      background-size: cover;
      background-repeat: no-repeat;
 
