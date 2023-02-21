@@ -10,6 +10,7 @@ window.setTimeout(function () {
     alert("You are here 20 seconds already, too long!".toUpperCase())
 }, 20000)
 
+
 // var scores = [24, 32,17];
 // var arrayLenght = scores.length;
 
@@ -35,4 +36,17 @@ function forLoop() {
         Content += Instruments[Y] + "<br>";
     }
     document.getElementById("ListOfInstruments").innerHTML = Content;
-} 
+}
+
+
+let person = {
+    name: "Seba ",
+    age: "30 ",
+    do: "learning javaScript ",
+    description: function () {
+        return "This is " + this.name + "he has " + this.age + "and he is " + this.do + "right now."
+    }
+
+};
+
+document.getElementById("personObject").innerHTML = person.description();
