@@ -6,6 +6,7 @@
 html {
     height: 200vh;
     box-shadow: inset 0 0 100px hsla(0, 99%, 59%, 1);
+    /* scroll-behavior: smooth; */
 }
 
 body {
@@ -46,8 +47,32 @@ h2 {
 div.one {
     display: flex;
     justify-content: center;
-    margin-top: 40px
+    margin-top: 20px;
+
 }
+
+
+div.two {
+    display: flex;
+    justify-content: center;
+    font-family: arial;
+    text-transform: uppercase;
+    margin-top: 80px;
+}
+
+
+.person {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.three {
+    text-transform: uppercase;
+}
+
+
+
 
 .btn {
 
